@@ -1,0 +1,24 @@
+#Given a two integer numbers return their product and  if the product is greater than 1000, then return their sum
+
+a =int(input("enter the number\t"))
+b =int(input("enter the number\t"))
+m=a*b
+if m > 1000:
+    s=a+b
+    print("The result is :",s)
+else:
+    print("The result is :",m)
+                #(or)
+
+a=int(input("enter the number1: "))
+b=int(input("enter the number2: "))
+def product_or_sum(num1,num2):
+    product =num1*num2
+    if product < 1000:
+        return product
+    else:
+        return num1+num2
+
+result=product_or_sum(a,b)
+print("The result is",result)
+    
