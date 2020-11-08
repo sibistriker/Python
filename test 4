@@ -1,0 +1,12 @@
+#Given a string and an integer number n, remove characters from a string starting from zero up to n and return a new string
+
+def removing(str,n):
+    return str[n:]
+str =input("Enter the string to perform the operation:")
+n =int(input("Enter the n value:"))
+if n > len(str):
+    print("The n value is invalid ")
+    print("Note:n value must be less than length of string")
+else:
+    result =removing(str,n)
+    print(result)
